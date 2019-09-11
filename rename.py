@@ -15,7 +15,7 @@ def regex_glob(exp):
 
 def format_title(title):
     title = title.replace(': ', ' - ')
-    valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
+    valid_chars = "-_.() %s%sÄÖÜäöüß" % (string.ascii_letters, string.digits)
     return ''.join(char for char in title if char in valid_chars)
 
 
